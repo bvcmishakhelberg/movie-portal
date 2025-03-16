@@ -1,0 +1,22 @@
+.detailsContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .movieImage {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  button {
+    margin-bottom: 20px;
+    grid-column: span 2;
+  }

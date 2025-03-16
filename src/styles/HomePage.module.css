@@ -1,0 +1,65 @@
+.movieCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 120px; /* Adjust width to fit more cards */
+  }
+  
+  .movieCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .movieImage {
+    width: 100px; /* Smaller width */
+    height: 150px; /* Adjust height to maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+  }
+  
+  .moviesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Reduce gap to fit more cards */
+    justify-content: center; /* Center the movie cards */
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background: #0056b3;
+  }
