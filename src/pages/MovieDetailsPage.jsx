@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { fetchMovieDetails } from "../api/tmdbApi";
 import MovieDetailsModal from "../components/MovieDetailsModal";
-import styles from "../styles/MovieDetailsPage.module.css";
+import styles from "../styles/MovieDetailsPage.Module.css";
 
 function MovieDetailsPage() {
   const { id } = useParams();
